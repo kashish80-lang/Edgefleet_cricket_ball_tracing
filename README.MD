@@ -40,7 +40,7 @@ EdgeFleetCricketTracker/
 ```bash
 pip install -r requirements.txt
 
-INSTRUCTIONS
+## **INSTRUCTIONS
 1. Run Semi-Automatic Tracker (Inference)
 
 Run the tracker for a single video:
