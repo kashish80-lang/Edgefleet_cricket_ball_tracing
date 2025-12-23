@@ -49,9 +49,8 @@ pip install -r requirements.txt
 
 ## **Instructions**
 
-### **1. Run Semi-Automatic Tracker (Inference)**
-
-Run the tracker for a single video:
+1. Run Semi-Automatic Tracker (Inference)
+To start tracking for a single video, run:
 
 ```bash
 python code/inference.py
