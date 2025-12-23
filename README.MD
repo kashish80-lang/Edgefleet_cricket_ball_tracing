@@ -37,11 +37,11 @@ EdgeFleetCricketTracker/
 - **Pandas**
 
 **Install dependencies:**
-```bash
+bash
 pip install -r requirements.txt
 
-## **INSTRUCTIONS
-1. Run Semi-Automatic Tracker (Inference)
+## **INSTRUCTIONS**
+1. **Run Semi-Automatic Tracker (Inference)**
 
 Run the tracker for a single video:
 
@@ -58,7 +58,7 @@ Interpolate positions between clicked frames.
 
 Generate a CSV file in annotations/ with columns:
 
-Output
+**Output**
 
 CSV Annotation File Example:
 
@@ -72,14 +72,14 @@ frame,x,y,visible
 Processed Video:
 MP4 video with the ball centroid and trajectory overlay.
 
-2. Fallback Logic
+2. **Fallback Logic**
 
 Problem: Automatic ML detection could not be used due to lack of training data (test videos cannot be used for training).
 
 Solution: Semi-automatic tracking with manual key-frame clicks and linear interpolation.
 This ensures reproducible outputs for all test videos.
 
-3. How to Reproduce
+3. **How to Reproduce**
 
 Place your test videos in data/test_video/.
 
@@ -91,7 +91,7 @@ python code/inference.py
 Follow on-screen instructions.
 Outputs will be saved in annotations/ and results/.
 
-4. Notes
+4. **Notes**
 
 Click only frames where the ball is visible.
 
