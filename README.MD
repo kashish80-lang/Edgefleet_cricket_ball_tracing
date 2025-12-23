@@ -10,19 +10,26 @@ Due to dataset constraints, a fully-trained ML model could not be built. Instead
 - **Positions between clicks** are interpolated to generate per-frame annotations.
 - A **processed video** is generated with trajectory overlay.
 
-All outputs meet the **EdgeFleet.AI assessment requirements**.
 
 ---
 
 ## **Repository Structure**
 EdgeFleetCricketTracker/
 ├─ code/
+
 │ ├─ train.py #  training script
+
 │ ├─ tracker.py #  tracking module
+
 │ ├─ utils.py # Utility functions
+
 │ ├─ tracking.py # Semi-automatic tracker code
+
 │ └─ inference.py # Inference script to run tracker on videos
+
 ├─ annotations/ # CSV annotation files per video
+
+
 ├─ results/ # Processed videos with trajectory overlay
 ├─ README.md
 └─ report.pdf # Report explaining assumptions and approach
@@ -40,12 +47,19 @@ EdgeFleetCricketTracker/
 bash
 pip install -r requirements.txt
 
+<<<<<<< HEAD
 ## **INSTRUCTIONS**
 1. **Run Semi-Automatic Tracker (Inference)**
+=======
+## **Instructions**
 
-Run the tracker for a single video:
+1. Run Semi-Automatic Tracker (Inference)
+To start tracking for a single video, run:
+>>>>>>> 593434d55650ebcf7bf872b58069048478be24e2
 
+```bash
 python code/inference.py
+
 
 
 The script will:
@@ -72,14 +86,22 @@ frame,x,y,visible
 Processed Video:
 MP4 video with the ball centroid and trajectory overlay.
 
+<<<<<<< HEAD
 2. **Fallback Logic**
+=======
+### **2. Fallback Logic**
+>>>>>>> 593434d55650ebcf7bf872b58069048478be24e2
 
 Problem: Automatic ML detection could not be used due to lack of training data (test videos cannot be used for training).
 
 Solution: Semi-automatic tracking with manual key-frame clicks and linear interpolation.
 This ensures reproducible outputs for all test videos.
 
+<<<<<<< HEAD
 3. **How to Reproduce**
+=======
+### **3. How to Run**
+>>>>>>> 593434d55650ebcf7bf872b58069048478be24e2
 
 Place your test videos in data/test_video/.
 
@@ -88,10 +110,13 @@ Run:
 python code/inference.py
 
 
-Follow on-screen instructions.
 Outputs will be saved in annotations/ and results/.
 
+<<<<<<< HEAD
 4. **Notes**
+=======
+### **How To Select Ball**
+>>>>>>> 593434d55650ebcf7bf872b58069048478be24e2
 
 Click only frames where the ball is visible.
 
