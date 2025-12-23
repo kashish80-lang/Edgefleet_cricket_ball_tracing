@@ -10,19 +10,26 @@ Due to dataset constraints, a fully-trained ML model could not be built. Instead
 - **Positions between clicks** are interpolated to generate per-frame annotations.
 - A **processed video** is generated with trajectory overlay.
 
-All outputs meet the **EdgeFleet.AI assessment requirements**.
 
 ---
 
 ## **Repository Structure**
 EdgeFleetCricketTracker/
 ├─ code/
+
 │ ├─ train.py #  training script
+
 │ ├─ tracker.py #  tracking module
+
 │ ├─ utils.py # Utility functions
+
 │ ├─ tracking.py # Semi-automatic tracker code
+
 │ └─ inference.py # Inference script to run tracker on videos
+
 ├─ annotations/ # CSV annotation files per video
+
+
 ├─ results/ # Processed videos with trajectory overlay
 ├─ README.md
 └─ report.pdf # Report explaining assumptions and approach
@@ -40,7 +47,7 @@ EdgeFleetCricketTracker/
 ```bash
 pip install -r requirements.txt
 
-INSTRUCTIONS
+# **INSTRUCTIONS** 
 1. Run Semi-Automatic Tracker (Inference)
 
 Run the tracker for a single video:
@@ -91,7 +98,7 @@ python code/inference.py
 Follow on-screen instructions.
 Outputs will be saved in annotations/ and results/.
 
-4. Notes
+# **4. Notes** 
 
 Click only frames where the ball is visible.
 
